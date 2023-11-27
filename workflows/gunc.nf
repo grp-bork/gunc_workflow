@@ -36,6 +36,7 @@ ch_multiqc_custom_methods_description = params.multiqc_methods_description ? fil
 // SUBWORKFLOW: Consisting of a mix of local and nf-core/modules
 //
 include { INPUT_CHECK } from '../subworkflows/local/input_check'
+include { GUNC_QC     } from '../subworkflows/local/gunc_qc'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,11 +74,14 @@ workflow GUNC {
     // ! There is currently no tooling to help you write a sample sheet schema
 
     //
-    // MODULE: Run GUNC
+    // SUBWORKFLOW: Download GUNC DB, Run GUNC and Merge with CheckM results
     //
+    GUNC_QC(
+        INPUT_CHECK.out.reads,
+        params.gunc_db,
+        null
+    )
 
-
-//     //
 //     // MODULE: Run FastQC
 //     //
 //     FASTQC (
@@ -111,7 +115,7 @@ workflow GUNC {
 //         ch_multiqc_logo.toList()
 //     )
 //     multiqc_report = MULTIQC.out.report.toList()
-// }
+}
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
