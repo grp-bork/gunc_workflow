@@ -101,15 +101,10 @@ workflow GUNC {
             meta.domain != "eukarya"
         }
 
-    // ch_input_bins.view { "default: ${it}"}
-    // ch_input_bins.groupTuple().view {"group: ${it}"}
-
-
+    //
+    // CheckM subworkflow: Quantitative measures for the assessment of genome assembly
+    //
     if (params.run_checkm){
-        /*
-        * CheckM subworkflow: Quantitative measures for the assessment of genome assembly
-        */
-
         CHECKM_QC (
             ch_input_bins,
             ch_checkm_db
@@ -124,7 +119,6 @@ workflow GUNC {
     //
     // SUBWORKFLOW: Download GUNC DB, Run GUNC and Merge with CheckM results
     //
-
     if ( params.run_checkm) {
         GUNC_QC ( ch_input_bins, ch_gunc_db, CHECKM_QC.out.checkm_tsv )
         ch_versions = ch_versions.mix( GUNC_QC.out.versions )
@@ -133,14 +127,6 @@ workflow GUNC {
         ch_versions = ch_versions.mix( GUNC_QC.out.versions )
     }
 
-    // //
-    // // SUBWORKFLOW: Download GUNC DB, Run GUNC and Merge with CheckM results
-    // //
-    // GUNC_QC(
-    //     INPUT_CHECK.out.reads,
-    //     params.gunc_db,
-    //     null
-    // )
 }
 
 /*
