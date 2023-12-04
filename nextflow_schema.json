@@ -37,6 +37,54 @@
                 }
             }
         },
+        "gunc": {
+            "title": "GUNC",
+            "type": "object",
+            "description": "Parameters used to run the GUNC tool",
+            "default": "",
+            "properties": {
+                "gunc_database_type": {
+                    "type": "string",
+                    "default": "progenomes",
+                    "description": "GUNC database type (`progenomes` or `gtdb`)",
+                    "enum": ["progenomes", "gtdb"]
+                },
+                "gunc_db": {
+                    "type": "string",
+                    "description": "Path to GUNC database"
+                },
+                "gunc_save_db": {
+                    "type": "boolean",
+                    "description": "Boolean whether to save GUNC database"
+                }
+            }
+        },
+        "checkm": {
+            "title": "CheckM",
+            "type": "object",
+            "description": "Parameters used to run the CheckM tool",
+            "default": "",
+            "properties": {
+                "run_checkm": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Boolean whether to run CheckM first before using GUNC (recommended)"
+                },
+                "checkm_download_url": {
+                    "type": "string",
+                    "default": "https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.tar.gz",
+                    "description": "URL to CheckM database"
+                },
+                "checkm_db": {
+                    "type": "string",
+                    "description": "Path to CheckM database"
+                },
+                "save_checkm_data": {
+                    "type": "boolean",
+                    "description": "Boolean whether to save CheckM database"
+                }
+            }
+        },
         "reference_genome_options": {
             "title": "Reference genome options",
             "type": "object",
@@ -244,6 +292,12 @@
             "$ref": "#/definitions/input_output_options"
         },
         {
+            "$ref": "#/definitions/gunc"
+        },
+        {
+            "$ref": "#/definitions/checkm"
+        },
+        {
             "$ref": "#/definitions/reference_genome_options"
         },
         {
@@ -255,38 +309,5 @@
         {
             "$ref": "#/definitions/generic_options"
         }
-    ],
-    "properties": {
-        "run_checkm": {
-            "type": "boolean",
-            "default": true,
-            "description": "Boolean whether to run CheckM first before using GUNC (recommended)"
-        },
-        "checkm_download_url": {
-            "type": "string",
-            "default": "https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.tar.gz",
-            "description": "URL to CheckM database"
-        },
-        "checkm_db": {
-            "type": "string",
-            "description": "Path to CheckM database"
-        },
-        "save_checkm_data": {
-            "type": "boolean",
-            "description": "Boolean whether to save CheckM database"
-        },
-        "gunc_database_type": {
-            "type": "string",
-            "default": "progenomes",
-            "description": "GUNC database type (`progenomes` or `gtdb`)"
-        },
-        "gunc_db": {
-            "type": "string",
-            "description": "Path to GUNC database"
-        },
-        "gunc_save_db": {
-            "type": "boolean",
-            "description": "Boolean whether to save GUNC database"
-        }
-    }
+    ]
 }
