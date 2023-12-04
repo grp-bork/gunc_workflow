@@ -3,7 +3,7 @@ process ARIA2 {
     tag "$source_url"
     label 'process_single'
 
-    conda "${moduleDir}/environment.yml"
+    conda "conda-forge::aria2=1.36.0"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/aria2:1.36.0' :
         'biocontainers/aria2:1.36.0' }"
@@ -12,7 +12,7 @@ process ARIA2 {
     val source_url
 
     output:
-    path ("$downloaded_file"), emit: downloaded_file
+    path ("checkm_data_2015_01_16/"), emit: downloaded_file
     path "versions.yml"      , emit: versions
 
     when:
@@ -29,6 +29,9 @@ process ARIA2 {
         --check-certificate=false \\
         $args \\
         $source_url
+
+    mkdir checkm_data_2015_01_16/
+    tar x -C checkm_data_2015_01_16 -v -z -f *.tar.gz
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
