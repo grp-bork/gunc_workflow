@@ -27,7 +27,7 @@ The pipeline is built using [Nextflow](https://www.nextflow.io/) and processes d
 
 </details>
 
-[CheckM](https://ecogenomics.github.io/CheckM/) provides detailed quality assessment for metagenomic bins. Its output can be found under the `GenomeBinning/QC/CheckM` directory.
+[CheckM](https://ecogenomics.github.io/CheckM/) provides detailed quality assessment for metagenomic bins. Its output can be found under the `CheckM` directory.
 
 ### GUNC
 
@@ -40,7 +40,7 @@ The pipeline is built using [Nextflow](https://www.nextflow.io/) and processes d
 
 </details>
 
-[GUNC](https://grp-bork.embl-community.io/gunc/) identifies chimerism and contamination in genomic bins. The relevant outputs are located in the `GenomeBinning/QC/GUNC` directory.
+[GUNC](https://grp-bork.embl-community.io/gunc/) identifies chimerism and contamination in genomic bins. The relevant outputs are located in the `GUNC` directory.
 
 ### Pipeline information
 

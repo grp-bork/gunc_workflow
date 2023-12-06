@@ -29,7 +29,7 @@ workflow GUNC_QC {
     // Make sure to keep directory in sync with modules.conf
     GUNC_RUN.out.maxcss_level_tsv
         .map{it[1]}
-        .collectFile(name: "gunc_summary.tsv", keepHeader: true, storeDir: "${params.outdir}/GenomeBinning/QC/")
+        .collectFile(name: "gunc_summary.tsv", keepHeader: true, storeDir: "${params.outdir}/")
 
     if ( params.run_checkm ) {
 
@@ -42,7 +42,7 @@ workflow GUNC_QC {
     // Make sure to keep directory in sync with modules.conf
     GUNC_MERGECHECKM.out.tsv
         .map{it[1]}
-        .collectFile(name: "gunc_checkm_summary.tsv", keepHeader: true, storeDir: "${params.outdir}/GenomeBinning/QC/")
+        .collectFile(name: "gunc_checkm_summary.tsv", keepHeader: true, storeDir: "${params.outdir}/")
     }
 
     emit:
