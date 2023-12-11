@@ -1,4 +1,4 @@
-# nf-core/gunc: Output
+# gunc: Output
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# nf-core/gunc: Usage
+# gunc: Usage
 
 ## :warning: Please read this documentation on the nf-core website: [https://nf-co.re/gunc/usage](https://nf-co.re/gunc/usage)
 
@@ -41,7 +41,7 @@ An [example samplesheet](../assets/samplesheet.csv) has been provided with the p
 The typical command for running the pipeline is as follows:
 
 ```bash
-nextflow run nf-core/gunc --input ./samplesheet.csv --outdir ./results -profile docker
+nextflow run gunc --input ./samplesheet.csv --outdir ./results -profile docker
 ```
 
 This will launch the pipeline with the `docker` configuration profile. See below for more information about profiles.
@@ -66,7 +66,7 @@ Do not use `-c <file>` to specify parameters as this will result in errors. Cust
 The above pipeline run specified with a params file in yaml format:
 
 ```bash
-nextflow run nf-core/gunc -profile docker -params-file params.yaml
+nextflow run gunc -profile docker -params-file params.yaml
 ```
 
 with `params.yaml` containing:
