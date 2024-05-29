@@ -8,12 +8,6 @@
 
 ## Usage
 
-:::note
-If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how
-to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline)
-with `-profile test` before running the workflow on actual data.
-:::
-
 First, prepare a samplesheet with your input data that looks as follows:
 
 `samplesheet.csv`:
@@ -30,25 +24,11 @@ Each row represents a metagenomic bin.
 Now, you can run the pipeline using:
 
 ```bash
-nextflow run nf-core/gunc \
+nextflow run gunc \
    -profile <docker/singularity/.../institute> \
    --input samplesheet.csv \
    --outdir <OUTDIR>
 ```
-
-:::warning
-Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those
-provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_;
-see [docs](https://nf-co.re/usage/configuration#custom-configuration-files).
-:::
-
-For more details and further functionality, please refer to the [usage documentation](https://nf-co.re/gunc/usage) and the [parameter documentation](https://nf-co.re/gunc/parameters).
-
-## Pipeline output
-
-To see the results of an example test run with a full size dataset refer to the [results](https://nf-co.re/gunc/results) tab on the nf-core website pipeline page.
-For more details about the output files and reports, please refer to the
-[output documentation](https://nf-co.re/gunc/output).
 
 ## Credits
 
@@ -58,12 +38,6 @@ We thank the following people for their extensive assistance in the development 
 
 - James A. Fellows Yates
 - Jose Espinosa
-
-## Contributions and Support
-
-If you would like to contribute to this pipeline, please see the [contributing guidelines](.github/CONTRIBUTING.md).
-
-For further information or help, don't hesitate to get in touch on the [Slack `#gunc` channel](https://nfcore.slack.com/channels/gunc) (you can join with [this invite](https://nf-co.re/join/slack)).
 
 ## Citations
 
