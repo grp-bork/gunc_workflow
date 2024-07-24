@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/grp-bork/gunc_workflow,11,1
+/grp-bork/gunc_workflow/blob/master/main.nf,5,1
+/grp-bork/gunc_workflow/blob/master/nextflow_schema.json,5,1
+/grp-bork/gunc_workflow/commits/master,5,1
+/grp-bork/gunc_workflow/blob/master/nextflow.config,4,1
+/grp-bork/gunc_workflow/blob/56ef3fb429634c5b81b957144f8d884396447717/modules/nf-core/custom/dumpsoftwareversions/main.nf,3,1
+/grp-bork/gunc_workflow/blob/56ef3fb429634c5b81b957144f8d884396447717/modules/nf-core/custom/dumpsoftwareversions/meta.yml,2,1
+/grp-bork/gunc_workflow/blob/master/modules.json,2,1
+/grp-bork/gunc_workflow/blob/master/.nf-core.yml,2,1
+/grp-bork/gunc_workflow/blob/master/pyproject.toml,2,1
