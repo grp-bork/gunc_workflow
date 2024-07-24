@@ -1,0 +1,25 @@
+{
+  "inputParameters": [
+    "input"
+  ],
+  "outputParameters": [
+    "outdir",
+    "email",
+    "gunc_save_db",
+    "save_checkm_data"
+  ],
+  "exampleParameters": {
+    "input": "s3://example-data-gunc/samplesheet.csv"
+  },
+  "dois": [
+    "10.1186/s13059-021-02393-0",
+    "10.1038/s41587-020-0439-x",
+    "10.1101/gr.186072.114"
+  ],
+  "resourceParameters": [
+    "gunc_db",
+    "checkm_db",
+    "checkm_download_url",
+    "gunc_database_type"
+  ]
+}
