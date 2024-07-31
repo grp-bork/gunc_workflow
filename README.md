@@ -88,3 +88,5 @@ test_minigut,0,MEGAHIT,https://github.com/nf-core/test-datasets/raw/mag/assembli
 ```
 
 Each row represents a metagenomic bin.
+
+.
