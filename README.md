@@ -47,7 +47,7 @@
 The `GUNC workflow` is a nextflow workflow for the detection of chimerism & contamination in prokaryotic genomes resulting from mis-binning of contigs from unrelated lineages. The workflow is based on the `CheckM` and `GUNC` (Genome UNClutterer) tools. GUNC applies an entropy based score on taxonomic assignment and the contig location of all genes in a genome.
 
 #### Citation
-This workflow: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13143009.svg)](https://doi.org/10.5281/zenodo.13143009)
+This workflow: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13143008.svg)](https://doi.org/10.5281/zenodo.13143008)
 
 Also cite:
 ```
