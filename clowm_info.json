@@ -19,8 +19,6 @@
   ],
   "resourceParameters": [
     "gunc_db",
-    "checkm_db",
-    "checkm_download_url",
-    "gunc_database_type"
+    "checkm_db"
   ]
 }
