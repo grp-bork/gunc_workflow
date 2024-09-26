@@ -9,7 +9,7 @@
     "save_checkm_data"
   ],
   "exampleParameters": {
-    "input": "s3://example-data-gunc/samplesheet.csv"
+    "input": "s3://workflow-exampledata/gunc/samplesheet.csv"
   },
   "dois": [
     "10.5281/zenodo.13143008",
