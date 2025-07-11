@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/grp-bork/gunc_workflow/blob/master/README.md,6,1
+/grp-bork/gunc_workflow,4,2
+/grp-bork/gunc_workflow/blob/master/main.nf,2,1
+/grp-bork/gunc_workflow/blob/master/CHANGELOG.md,1,1
+/grp-bork/gunc_workflow/blob/master/conf/base.config,1,1
+/grp-bork/gunc_workflow/blob/master/conf/test_full.config,1,1
+/grp-bork/gunc_workflow/blob/master/.devcontainer/devcontainer.json,1,1
+/grp-bork/gunc_workflow/blob/master/modules/nf-core/custom/dumpsoftwareversions/main.nf,1,1
+/grp-bork/gunc_workflow/blob/master/subworkflows/local/checkm_qc.nf,1,1
+/grp-bork/gunc_workflow/issues,1,1
