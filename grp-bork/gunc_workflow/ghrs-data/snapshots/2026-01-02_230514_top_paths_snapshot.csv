@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/grp-bork/gunc_workflow,5,5
+/grp-bork/gunc_workflow/tree/master/modules,2,1
+/grp-bork/gunc_workflow/actions,1,1
+/grp-bork/gunc_workflow/blob/master/modules/nf-core/gunc/run/main.nf,1,1
+/grp-bork/gunc_workflow/blob/master/workflows/gunc.nf,1,1
+/grp-bork/gunc_workflow/tree/master,1,1
+/grp-bork/gunc_workflow/tree/master/modules/local,1,1
+/grp-bork/gunc_workflow/tree/master/modules/nf-core,1,1
+/grp-bork/gunc_workflow/tree/master/modules/nf-core/gunc,1,1
+/grp-bork/gunc_workflow/tree/master/modules/nf-core/gunc/run,1,1
