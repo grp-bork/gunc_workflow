@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/grp-bork/gunc_workflow,10,5
+/grp-bork/gunc_workflow/releases,2,1
+/grp-bork/gunc_workflow/tree/master/docs,2,1
+/grp-bork/gunc_workflow/blob/4d3ea1ffde34f66803435c30b804e0b3e33bf026/modules/nf-core/gunc/downloaddb/main.nf,1,1
+/grp-bork/gunc_workflow/blob/4d3ea1ffde34f66803435c30b804e0b3e33bf026/modules/nf-core/gunc/run/main.nf,1,1
+/grp-bork/gunc_workflow/branches,1,1
+/grp-bork/gunc_workflow/releases/tag/v1.01dev,1,1
+/grp-bork/gunc_workflow/tree/4d3ea1ffde34f66803435c30b804e0b3e33bf026/modules/nf-core/gunc/downloaddb,1,1
+/grp-bork/gunc_workflow/tree/master/.github,1,1
+/grp-bork/gunc_workflow/tree/master/bin,1,1
